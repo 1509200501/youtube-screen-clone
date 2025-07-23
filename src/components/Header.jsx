@@ -20,7 +20,7 @@ const Header = () => {
       }}
     >
       <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', gap: 2 }}>
-        {/* YouTube Logo + Text */}
+       
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
           <YouTubeIcon sx={{ color: 'red', fontSize: 32 }} />
           <Typography
@@ -40,7 +40,7 @@ const Header = () => {
           </Typography>
         </Box>
 
-        {/* Search and Mic */}
+      
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
           <Box
             sx={{
@@ -75,7 +75,7 @@ const Header = () => {
           </IconButton>
         </Box>
 
-        {/* Theme Toggle */}
+     
         <Box>
           <ThemeToggle />
         </Box>
