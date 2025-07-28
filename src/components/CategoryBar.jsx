@@ -39,7 +39,7 @@ const CategoryBar = () => {
             bgcolor: isDarkMode ? '#383838' : '#f0f0f0',
             color: isDarkMode ? '#fff' : '#000',
             fontWeight: 700,
-            borderRadius: '8px', // or 6px, 4px as per your preference
+            borderRadius: '8px', 
 
             '&:hover': {
               bgcolor: isDarkMode ? '#4f4f4f' : '#e0e0e0',
