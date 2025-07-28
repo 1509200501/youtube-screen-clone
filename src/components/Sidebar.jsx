@@ -1,18 +1,18 @@
 import React from 'react';
-import { Box, List, ListItem, ListItemText } from '@mui/material';
+import { Drawer, List, ListItem, ListItemText } from '@mui/material';
 
 const items = ['Home', 'Trending', 'Subscriptions', 'Library'];
 
-export default function Sidebar() {
+export default function Sidebar({ open, onClose }) {
   return (
-    <Box sx={{ width: '200px', borderRight: '1px solid #ccc', height: '100vh', position: 'fixed' }}>
-      <List>
+    <Drawer anchor="left" open={open} onClose={onClose}>
+      <List sx={{ width: 200 }}>
         {items.map((item) => (
           <ListItem button key={item}>
             <ListItemText primary={item} />
           </ListItem>
         ))}
       </List>
-    </Box>
+    </Drawer>
   );
 }
