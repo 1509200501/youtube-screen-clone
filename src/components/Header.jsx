@@ -21,7 +21,7 @@ import Sidebar from './Sidebar';
 const Header = () => {
   const theme = useTheme();
   const isDark = theme.palette.mode === 'dark';
-  const [openSidebar, setOpenSidebar] = useState(false); // sidebar toggle state
+  const [openSidebar, setOpenSidebar] = useState(false); 
 
   return (
     <>
@@ -52,7 +52,7 @@ const Header = () => {
             </Typography>
           </Box>
 
-          {/* Center: Search Bar */}
+         
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
             <Box
               sx={{
@@ -86,7 +86,7 @@ const Header = () => {
             </IconButton>
           </Box>
 
-          {/* Right: Icons */}
+         
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
             <IconButton>
               <AddCircleOutlineIcon />
@@ -99,7 +99,7 @@ const Header = () => {
         </Toolbar>
       </AppBar>
 
-      {/* Sidebar Component (Drawer) */}
+     
       <Sidebar open={openSidebar} onClose={() => setOpenSidebar(false)} />
     </>
   );
