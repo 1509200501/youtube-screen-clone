@@ -34,7 +34,7 @@ const Header = () => {
         }}
       >
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', gap: 2 }}>
-          {/* Left: Menu + Logo */}
+         
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
             <IconButton onClick={() => setOpenSidebar(true)}>
               <MenuIcon />
